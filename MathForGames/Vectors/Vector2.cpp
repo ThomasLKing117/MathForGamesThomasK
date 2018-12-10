@@ -23,20 +23,17 @@ float Vector2::getY()
 
 Vector2 Vector2::operator+(Vector2 & rhs)
 {
-
-	return Vector2();
+	return Vector2(xPos + rhs.xPos, yPos + rhs.yPos);
 }
 
 Vector2 Vector2::operator-(Vector2 & rhs)
 {
-
-	return Vector2();
+	return Vector2(xPos - rhs.xPos, yPos - rhs.yPos);
 }
 
 Vector2 Vector2::operator*(float & rhs)
 {
-
-	return Vector2();
+	return Vector2(xPos * rhs, yPos * rhs);
 }
 
 bool Vector2::operator==(Vector2 & rhs)
