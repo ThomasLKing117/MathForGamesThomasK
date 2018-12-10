@@ -45,3 +45,14 @@ bool Vector2::operator!=(Vector2 & rhs)
 {
 	return this->xPos != rhs.xPos || this->yPos != rhs.yPos;
 }
+
+float Vector2::magnitude()
+{
+	float temp = (xPos * xPos) + (yPos * yPos);
+	return sqrtf(temp);
+}
+
+Vector2 Vector2::normalize()
+{
+	return Vector2((xPos / magnitude()), (yPos / magnitude()));
+}

@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 
 class Vector3
 {
@@ -24,5 +25,9 @@ public:
 
 	bool operator == (Vector3& rhs);
 	bool operator != (Vector3& rhs);
+
+	float magnitude();
+
+	Vector3 normalize();
 
 };
