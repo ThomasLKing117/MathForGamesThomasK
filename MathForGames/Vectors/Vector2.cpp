@@ -23,24 +23,18 @@ float Vector2::getY()
 
 Vector2 Vector2::operator+(Vector2 & rhs)
 {
-	this->xPos + rhs.xPos;
-	this->yPos + rhs.yPos;
 
 	return Vector2();
 }
 
 Vector2 Vector2::operator-(Vector2 & rhs)
 {
-	this->xPos - rhs.xPos;
-	this->yPos - rhs.yPos;
 
 	return Vector2();
 }
 
 Vector2 Vector2::operator*(float & rhs)
 {
-	this->xPos * rhs;
-	this->yPos * rhs;
 
 	return Vector2();
 }
