@@ -28,4 +28,6 @@ public:
 
 	Vector2 normalize();
 
+	float distance(Vector2 other);
+
 };

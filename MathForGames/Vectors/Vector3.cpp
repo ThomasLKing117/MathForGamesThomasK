@@ -63,3 +63,8 @@ Vector3 Vector3::normalize()
 {
 	return Vector3((xPos / magnitude()), (yPos / magnitude()), (zPos / magnitude()));
 }
+
+float Vector3::distance(Vector3 other)
+{
+	return sqrtf(pow(xPos - other.xPos, 2) + pow(yPos - other.yPos, 2) + pow(zPos - other.zPos, 2));
+}

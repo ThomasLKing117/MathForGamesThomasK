@@ -30,4 +30,6 @@ public:
 
 	Vector3 normalize();
 
+	float distance(Vector3 other);
+
 };

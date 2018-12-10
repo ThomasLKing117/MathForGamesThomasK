@@ -30,5 +30,7 @@ int main()
 	V2.magnitude();
 	V2.normalize();
 
+	V2.distance(V1);
+
 	return 0;
 }

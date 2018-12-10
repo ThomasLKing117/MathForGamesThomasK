@@ -56,3 +56,8 @@ Vector2 Vector2::normalize()
 {
 	return Vector2((xPos / magnitude()), (yPos / magnitude()));
 }
+
+float Vector2::distance(Vector2 other)
+{
+	return sqrtf(pow(xPos - other.xPos, 2) + pow(yPos - other.yPos, 2));
+}
