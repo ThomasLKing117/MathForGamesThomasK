@@ -37,6 +37,8 @@
 //		Vector2 V6(5, 5);
 //
 //		V1 == V6;
+//
+//		V1.dotProduct(V2);
 //	}
 //
 //	//Vector3 Examples
@@ -75,6 +77,10 @@
 //		Vector3 V6(5, 5, 5);
 //
 //		V1 == V6;
+//
+//		V1.dotProduct(V2);
+//
+//		V1.crossProduct(V2);
 //	}
 //
 //	return 0;

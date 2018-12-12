@@ -69,3 +69,16 @@ float Vector3::distance(Vector3 other)
 {
 	return sqrtf(pow(xPos - other.xPos, 2) + pow(yPos - other.yPos, 2) + pow(zPos - other.zPos, 2));
 }
+
+float Vector3::dotProduct(Vector3 rhs)
+{
+	return ((xPos * rhs.xPos) + (yPos * rhs.yPos) + (zPos * rhs.zPos));
+}
+
+Vector3 Vector3::crossProduct(Vector3 rhs)
+{
+	float x = ((yPos * rhs.zPos) - (zPos * rhs.yPos));
+	float y = ((zPos * rhs.xPos) - (xPos * rhs.zPos));
+	float z = ((xPos * rhs.yPos) - (yPos * rhs.xPos));
+	return Vector3(x, y, z);
+}

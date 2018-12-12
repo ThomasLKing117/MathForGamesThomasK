@@ -62,3 +62,8 @@ float Vector2::distance(Vector2 other)
 {
 	return sqrtf(pow(xPos - other.xPos, 2) + pow(yPos - other.yPos, 2));
 }
+
+float Vector2::dotProduct(Vector2 rhs)
+{
+	return ((xPos * rhs.xPos) + (yPos * rhs.yPos));
+}
