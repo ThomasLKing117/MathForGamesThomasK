@@ -54,6 +54,16 @@ bool Vector3::operator!=(Vector3 & rhs)
 	return this->xPos != rhs.xPos || this->yPos != rhs.yPos || this->zPos != rhs.zPos;
 }
 
+Vector3 Vector3::operator+=(Vector3 & other)
+{
+	return Vector3((xPos = xPos + other.xPos),(yPos = yPos + other.yPos),(zPos = zPos + other.zPos));
+}
+
+Vector3 Vector3::operator-=(Vector3 & other)
+{
+	return Vector3((xPos = xPos - other.xPos), (yPos = yPos - other.yPos), (zPos = zPos - other.zPos));
+}
+
 float Vector3::magnitude()
 {
 	float temp = (xPos * xPos) + (yPos * yPos) + (zPos * zPos);

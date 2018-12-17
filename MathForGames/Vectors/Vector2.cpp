@@ -47,6 +47,16 @@ bool Vector2::operator!=(Vector2 & rhs)
 	return this->xPos != rhs.xPos || this->yPos != rhs.yPos;
 }
 
+Vector2 Vector2::operator+=(Vector2 & other)
+{
+	return Vector2((xPos = xPos + other.xPos), (yPos = yPos + other.yPos));
+}
+
+Vector2 Vector2::operator-=(Vector2 & other)
+{
+	return Vector2((xPos = xPos - other.xPos),(yPos = yPos - other.yPos));
+}
+
 float Vector2::magnitude()
 {
 	float temp = (xPos * xPos) + (yPos * yPos);
